@@ -27,7 +27,7 @@ What Verbatim Is Not
 
 2. Not an **AI summarizer** or paraphraser
 
-3. Not a black‑box** ML system**
+3. Not a black‑box **ML system**
 
 4. Not **trained** on user data
 
@@ -198,6 +198,6 @@ Philosophy
 --------------------
 
 
-####We don’t ask machines to rewrite language.
+### #We don’t ask machines to rewrite language.
 
-####We teach them to respect it — and explain it.
+#### We teach them to respect it — and explain it.
