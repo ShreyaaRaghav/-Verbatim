@@ -1,14 +1,17 @@
 Verbatim - NLP text simplification platform
 ============================================
 
+
 > Verbatim is a meaning‑first linguistic clarity platform designed to help users understand complex and sensitive documents without generating new content.
 
-#### Instead of relying on **generative AI**, Verbatim uses** deterministic, rule‑based NLP** to analyze and explain existing language. This makes it suitable for **high‑trust domains** such as healthcare, law, education, and government.
+#### Instead of relying on **generative AI** , Verbatim uses **deterministic, rule‑based NLP** to analyze and explain existing language. This makes it suitable for **high‑trust domains** such as healthcare, law, education, and government.
 
 > Verbatim prioritizes accuracy, traceability, and user trust over automation.
 
+
 What Verbatim Is
 --------------------
+
 
 * A language explanation layer, not a summarizer
 
@@ -16,8 +19,10 @@ What Verbatim Is
 
 * A clarity platform for sensitive, real‑world documents
 
+
 What Verbatim Is Not
 --------------------
+
 1. Not a **text generator**
 
 2. Not an **AI summarizer** or paraphraser
@@ -26,8 +31,10 @@ What Verbatim Is Not
 
 4. Not **trained** on user data
 
+
 Core Capabilities
 --------------------
+
 * Analyzes sentence structure and linguistic complexity
 
 * Simplifies vocabulary using controlled, approved mappings
@@ -40,8 +47,10 @@ Core Capabilities
 
 * Produces predictable, explainable output
 
+
 High‑Level Architecture
 --------------------
+
 Frontend (HTML / CSS / JS)
 
         ↓
@@ -50,7 +59,7 @@ Flask Backend (Python API)
 
         ↓
         
-Rule-Based NLP Engine (spaCy + logic)
+Rule-Based NLP Engine (text simplification NLP logic)
 
         ↓
         
@@ -58,8 +67,10 @@ Cloud Services (Google TTS, Translation)
 
 ### All linguistic decisions are made before any cloud services are applied.
 
+
 Tech Stack
 --------------------
+
 
 #### Backend
 
@@ -75,6 +86,7 @@ Tech Stack
 
 * wordfreq — frequency‑based word difficulty detection
 
+
 #### Frontend
 
 * HTML — structure
@@ -82,6 +94,7 @@ Tech Stack
 * CSS — styling
 
 * JavaScript — API calls and interaction
+
 
 #### Cloud Services
 
@@ -91,8 +104,10 @@ Tech Stack
 
 >> Cloud services are used only for output delivery, not for language analysis or generation.
 
+
 NLP Processing Pipeline
 --------------------
+
 
 * Sentence Segmentation
 Breaks documents into logical, readable units.
@@ -123,22 +138,27 @@ Explains linguistic features such as:
 * Output Modes
 > Simple Version — cleaner, easier‑to‑read text
 
+
 ### What This Means — sentence‑level explanations for understanding
 
+
 * Accessibility Features
-> Text‑to‑Speech for read‑aloud support
-> Cloud translation for multilingual access
-> Downloadable outputs
-> Shareable document links
+*  Text‑to‑Speech for read‑aloud support
+*  Cloud translation for multilingual access
+*  Downloadable outputs
+* Shareable document links
+
 
 Installation
 --------------------
+
 pip install spacy nltk textstat wordfreq flask
 python -m spacy download en_core_web_sm
 
 
 Example API Response
 --------------------
+
 {
   "original": "The policy shall be implemented pursuant to regulations.",
   "simple": "The policy shall be implemented under regulations.",
@@ -148,6 +168,7 @@ Example API Response
 
 Design Principles
 --------------------
+
 
 > Deterministic — same input, same output
 
@@ -163,6 +184,7 @@ Design Principles
 Intended Use Cases
 --------------------
 
+
 Legal and government documents
 
 Medical forms and patient information
@@ -171,8 +193,11 @@ Academic and institutional text
 
 Public‑facing policies and notices
 
+
 Philosophy
 --------------------
 
-We don’t ask machines to rewrite language.
-We teach them to respect it — and explain it.
+
+####We don’t ask machines to rewrite language.
+
+####We teach them to respect it — and explain it.
