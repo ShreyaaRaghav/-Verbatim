@@ -198,6 +198,6 @@ Philosophy
 --------------------
 
 
-### #We don’t ask machines to rewrite language.
+#### We don’t ask machines to rewrite language.
 
 #### We teach them to respect it — and explain it.
