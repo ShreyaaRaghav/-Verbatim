@@ -5,8 +5,15 @@ import textstat
 from wordfreq import zipf_frequency
 import pandas as pd
 
-# Load spaCy once 
-nlp = spacy.load("en_core_web_sm")
+import re
+
+from spacy.cli import download
+
+try:
+    nlp = spacy.load("en_core_web_sm")
+except:
+    download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 
 PROTECTED_ENTITIES = {
@@ -198,3 +205,4 @@ def cleartext(text):
         })
 
     return results
+
