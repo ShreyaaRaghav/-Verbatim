@@ -201,3 +201,12 @@ Philosophy
 #### We don’t ask machines to rewrite language.
 
 #### We teach them to respect it — and explain it.
+
+
+Feedback & Ideas
+----------------
+
+*   Open an issue!!!
+    
+*   Or DM me on linkedin: www.linkedin.com/in/shreya-raghav
+>>
