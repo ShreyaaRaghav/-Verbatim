@@ -111,5 +111,6 @@ if st.session_state.df is not None:
 
 
 st.markdown("---")
-st.caption("ClearText • Reliability over automation")
+st.caption("Verbaitm • Reliability over automation")
+
 
