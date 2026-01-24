@@ -6,33 +6,25 @@ from translation import translate_text
 from text_to_speech import text_to_speech
 
 
-# -----------------------------
-# Page config
-# -----------------------------
+
 st.set_page_config(
-    page_title="ClearText – Reliable Text Simplification",
+    page_title="Verbaitm – Clear Text Simplification",
     page_icon="📄",
     layout="wide"
 )
 
-# -----------------------------
-# Session state init
-# -----------------------------
+
 if "df" not in st.session_state:
     st.session_state.df = None
 
 if "simplified_text" not in st.session_state:
     st.session_state.simplified_text = ""
 
-# -----------------------------
-# Header
-# -----------------------------
-st.title("📄 ClearText")
+
+st.title("📄 Verbaitm")
 st.caption("Deterministic, LLM-free document simplification")
 
-# -----------------------------
-# Input
-# -----------------------------
+
 st.subheader("Enter text to simplify")
 
 input_text = st.text_area(
@@ -40,9 +32,7 @@ input_text = st.text_area(
     height=220
 )
 
-# -----------------------------
-# Simplify button
-# -----------------------------
+
 if st.button("Simplify Text"):
     if not input_text.strip():
         st.warning("Please enter some text.")
@@ -56,9 +46,7 @@ if st.button("Simplify Text"):
 
         st.success("Text simplified!")
 
-# -----------------------------
-# Show results (persistent)
-# -----------------------------
+
 if st.session_state.df is not None:
     st.subheader("Results")
 
@@ -73,9 +61,7 @@ if st.session_state.df is not None:
             st.markdown("**Explanation**")
             st.info(row["explanation"])
 
-    # -----------------------------
-    # Download
-    # -----------------------------
+
     st.subheader("Download")
 
     st.download_button(
@@ -85,10 +71,8 @@ if st.session_state.df is not None:
         mime="text/plain"
     )
 
-    # -----------------------------
-    # Translation + Audio
-    # -----------------------------
-    st.subheader("Translate & Listen")
+
+    st.subheader("Translate & Audio")
 
     lang_map = {
         "English": "en",
@@ -125,8 +109,7 @@ if st.session_state.df is not None:
             else:
                 st.error("Translation failed.")
 
-# -----------------------------
-# Footer
-# -----------------------------
+
 st.markdown("---")
 st.caption("ClearText • Reliability over automation")
+
