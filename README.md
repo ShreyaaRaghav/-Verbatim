@@ -1,6 +1,7 @@
 Verbatim - NLP text simplification platform
 ============================================
 
+Video Link: https://vimeo.com/1157959437?share=copy&fl=sv&fe=ci
 
 > Verbatim is a meaning‑first linguistic clarity platform designed to help users understand complex and sensitive documents without generating new content.
 
